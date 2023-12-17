@@ -21,7 +21,8 @@ int checkSparse(int row, int col, int arr[row][col]) {
                 count++;
         }
     }
-    if (count > (row * col) / 4)
+    //50% 
+    if (count > (row * col) / 2)
         return 0;
     else
         return count;
